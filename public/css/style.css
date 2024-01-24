@@ -2458,7 +2458,8 @@ h6 {
 
 .aali_tm_news .news_list ul li .image img {
   position: relative;
-  opacity: 0;
+  opacity: 1;
+  min-height: 200px;
   min-width: 100%;
 }
 
