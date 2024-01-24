@@ -4876,3 +4876,38 @@ input::-webkit-inner-spin-button {
 
   }
 }
+
+/* ContentCreation.css */
+.gallery-container {
+  column-gap: 40px; /* Adjust the gap value as needed */
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px; /* Adjust the margin as needed */
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+@media (min-width: 768px) {
+  .gallery-container {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-container {
+    column-count: 3;
+  }
+}
+
+
+

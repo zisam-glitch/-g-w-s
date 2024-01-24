@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { fb, insta, msg, twitter } from "../svgImage";
 import { parallax } from "../utilits";
 import Booking from "./booking";
-
+import WhatsappChat from "./whatsapp";
 const Home = () => {
   const [text, setText] = useState(1);
   useEffect(() => {
@@ -145,6 +145,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* <WhatsappChat /> */}
       <a
        target="_blank"
        href="http://wa.me/8801639501551">
