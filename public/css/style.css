@@ -1068,7 +1068,7 @@ h6 {
 }
 
 .aali_tm_about .center h3 span {
-  font-size: 40px;
+  font-size: 33px;
   color: #ea4343;
 }
 
@@ -2459,8 +2459,9 @@ h6 {
 .aali_tm_news .news_list ul li .image img {
   position: relative;
   opacity: 1;
-  min-height: 200px;
+  min-height: 250px;
   min-width: 100%;
+  object-fit: cover;
 }
 
 .aali_tm_news .news_list ul li .image .main {

@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { SwiperNavButtons } from "./SwiperNavButton";
+import { Autoplay } from 'swiper/modules';
 import React, { useEffect, useState } from 'react';
 import * as contentful from 'contentful';
 
@@ -67,6 +68,10 @@ const ContentfulFetch = () => {
         // slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        autoplay={{
+          delay: 1500,
+        }}
+        modules={[Autoplay]}
         breakpoints={{
           576: {
             slidesPerView: 2,
@@ -77,7 +82,7 @@ const ContentfulFetch = () => {
           968: {
             slidesPerView: 3,
           }
-         }}
+        }}
       >
         {projects.map((project, index) => (
           <SwiperSlide>
